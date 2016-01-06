@@ -1,1 +1,1 @@
-document.write('Hello Gitub');
+document.write('Hello Github');
