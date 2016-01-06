@@ -1,1 +1,1 @@
-document.write('Hello Gitub from Javascript');
+document.write('Hello Gitub');
