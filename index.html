@@ -1,87 +1,279 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>tutorialdoctor.github.io</title>
-    <!--
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">-->
-    <!-- Latest compiled JavaScript 
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>-->
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-  </head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
 
-  <body>
-    
-    <!--
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">     
-      <ul class="navbar-nav">
-        <li><a href="#">
-        <img class="navbar-logo" src="https://pbs.twimg.com/profile_images/594288430328188928/YfiQVmPv_bigger.png" alt="Logo"></a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Nisi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Suscipit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Officia</a>
-      </li>    
-    </ul>
-    </nav>-->
-    
-    <div class="jumbotron">
-      <div align="center" class="container">
-        <header>
-          <h1>Tutorial Doctor</h1>
-          <i>Molestiae quibusdam dolorum expedita</i><br><br>
-          <section id="downloads" class="clearfix">
-          <a href="https://github.com/TutorialDoctor/TutorialDoctor.github.io" target="_blank" id="view-on-github" class="btn btn-primary"><span>View on GitHub</span></a>
-        </section>
-        </header>
-    </div></div>
-    
-        <div class="container">
+    <title>Starter Template for Bootstrap</title>
 
-        <div class="row" id="main_content">
-          <div id="1">
-            <p>Welcome to <b>The Clinic</b>. This is a website for people suffering from badtutoriaitus, cheaptutoriaitus, <a class="hotitem" href="#">expensivitus</a>, simplaphobia, babeloria, and many other tutorial ailments, that result in very little or no understanding.
-            I have searched over the internet to find, what I think to be, the best, yet not too cheap, yet not too expensive, yet not too complicated, yet not so foreign, tutorials for various topics. 
-            Submit a topic and I will try and find a good tutorial on the internet for it. Content will be screened.</p></div>
-          
-          <div id="2">
-            <p>If you like any of the videos that come from YouTube please <a class="hotitem" href="#">subscribe</a> to them. These are not my videos, and they will appreciate it. Tap the ''white "i" on the video to see the information. Thank you.</p>
-              </div>
-          
-          <div id="3"><p>lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua placeat rerum laboriosam optio saepe necessitatibus ipsa vitae ipsum voluptatem facere veritatis molestiae quibusdam dolorum <a class="hotitem" href="#">expedita</a> at aspernatur consequatur ipsam odio voluptas dignissimos veniam eos porro vero deserunt suscipit natus exercitationem animi esse culpa distinctio numquam nesciunt omnis provident ratione iste nisi similique sapiente asperiores architecto ducimus quia adipisci praesentium corporis harum facilis quis officiis velit nulla rem a temporibus nobis quod vel fugiat officia minima consectetur ea incidunt dicta voluptatibus deleniti ullam accusan</p></div>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <style type="text/css">
+        body {
+            padding-top: 5rem;
+        }
+
+        .starter-template {
+            padding: 3rem 1.5rem;
+            text-align: center;
+        }
+      
+      pre{
+        color:#e83e8c
+      }
+      
+      .letter{
+        font-size: 32px;
+        color:#e83e8c;
+      }
+    </style>
+</head>
+
+    
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
         </div>
-          </div>
-    
-    <div class="jumbotron">
-              <div align="center" class="container">
-              <div align="center" class="container">
-        <header>
-          <h1>More Information</h1>
-          <i>Molestiae quibusdam dolorum expedita</i><br><br>
-          <section id="downloads" class="clearfix">
-          <a href="mailto:thetutorialdoctor@gmail.com" target="_blank" id="view-on-github" class="btn btn-danger"><span>Email Me</span></a>
-        </section>
-        </header>
-                </div></div></div>
+    </nav>
 
-    
-    <footer align="center">
-          This page was generated by <a href="https://pages.github.com">GitHub Pages</a>
-        </footer>
-  </body>
+    <main role="main" class="container">
+
+        <div class="starter-template">
+            <h1>Bootstrap starter template</h1>
+            <p class="lead">If you can cook, you can program.</p>
+        </div>
+      
+      <div class="intro">
+        <span class="letter">A</span> <b>computer program</b> is a <b>recipe</b> for a computer. The computer reads the recipe and you get a game like Angry Birds, a word processor like Microsoft Office, or a website like Youtube.
+
+        Recipes have various <b>ingredients</b>. They also have directions or instructions for using those ingredients.
+
+        The ingredients of a computer program are called <b>variables</b>. The <b>instructions</b> of a computer program are called <b>statements</b>. A group of statements is called a <b>function</b>.
+      </div><br/>
+      
+      <div class="block">
+        <h2>Data</h2>
+        <p>The <b>ingredients</b> of a computer program are called <b>data</b>. There are different types of data. Data is stored in <b>variables</b>.</p>
+        <p>Python</p>
+        <pre>
+        <b>name</b> = 'Southern Style Grits'
+        <b>water</b> = 4
+        <b>grits</b> = water/4
+        <b>cheese</b> = 2.5
+        <b>seasonings</b> = ['pepper','salt','basil']
+        <b>amounts</b> = {
+          seasonings[0]:'1tbsp',
+          seasonings[1]:'1tsp',
+          seasonings[2]:'1tsp'
+        }
+        </pre>
+        
+        <p>Javascript</p>
+        <pre>
+        <b>var</b> name = "Southern Style Grits"
+        <b>var</b> water = 4
+        <b>var</b> grits = water/4
+        <b>var</b> cheese = 2.5
+        <b>var</b> seasonings = ['pepper','salt','basil']
+        <b>var</b> amounts = {
+          seasonings[0]:'1tbsp',
+          seasonings[1]:'1tsp',
+          seasonings[2]:'1tsp'
+        }
+        </pre>
+        Common types of data are:
+        <pre>
+        <b>character</b> - a single character as in "a"
+        <b>string</b> - a string of characters as in "Hello World"
+        <b>integer</b> - a number
+        <b>float</b> - a number with a decimal
+        <b>array</b> - a list of data
+        <b>dictionary</b> - a list with an entry-definition-like structure called key:value pairs.
+        <b>boolean</b> - true or false
+        </pre>
+      </div>
+      
+      <div class="block">
+        <h2>Statements</h2>
+        <p><b>Statements</b> are the <b>instructions</b> of a computer program.</p>
+        <pre>
+        <b>print(</b>grits)
+        <b>input</b>("How old are you?")
+        </pre>
+      </div>
+
+      <div class="block">
+        <h2>Functions</h2>
+        <p>A <b>function</b> is a <b>group of statements</b>.</p>
+        <p>Python</p>
+        <pre>
+        <b>def</b> total(a,b):
+          print(a+b)
+          print(“That is the total”)
+          
+        total(water,grits)
+        </pre>
+        <p>Javascript</p>
+        <pre>
+        <b>function</b> total(a,b){
+          console.log(a+b);
+          console.log(“That is the total”);
+        }
+        total(water,grits);
+        </pre>
+      </div>  
+      
+      <div class="block">
+        <h2>Classes</h2>
+        <p>A Class is a <b>___</b> of statements</p>
+        <p>Python</p>
+        <pre>
+        <b>class</b> Mathematician(self,name,age):
+            __init__(self):
+                self.name = name;
+                self.age = age
+            def sum(a,b):
+                return a+b
+                
+        joe = Mathematician('Joe',24)
+        print(joe.sum(4,5))
+        </pre>
+        <p>Javascript</p>
+        <pre>
+        <b>class</b> Mathematician{
+          constructor(name,age){
+            this.name = name;
+            this.age = age;
+          }
+          sum(a,b){
+            return a+b;
+          }
+        }
+        joe = new Mathematician('Joe',24);
+        console.log(joe.sum(4,5));
+        </pre>
+      </div>   
+      
+      <div class="block">
+        <h2>SQL</h2>
+        <p>SQL is a langauge for <b>manipulating</b> databases.</p>
+        <pre>
+        /*select * from jobs where Pay != "NULL" and Pay != ""*/
+        /*select * from jobs where Applied = "YES"*/
+        /*select * from jobs where Title != "" and Title != "NULL" and Url != "NULL" and Url != ""*/
+        /*select *from jobs where Date = "2/2/18"*/
+        /*select * from jobs where Platform LIKE "Car%"*/
+        /*select * from jobs where Url LIKE "%car%"*/
+        /*select * from jobs where Title LIKE "%__thon%"*/
+        SELECT COUNT(Applied) FROM Jobs WHERE Applied="YES"
+        SELECT COUNT(DISTINCT location) FROM Jobs
+        SELECT * FROM Jobs LIMIT 5
+        SELECT first_name,last_name FROM customer
+        ORDER BY first_name ASC;
+        SELECT Title,Company FROM Jobs WHERE Company !="NULL" AND Company != "" AND Title!=""
+        ORDER BY Title ASC, Company DESC
+        /*two people with same first name, sorted by last name first. order by multiple columns*/
+        select Title,Company from Jobs where Company not in("NULL","") AND Title !=""
+        order by Title asc, Company desc
+        /*IN IS like a series of OR statements*/
+
+
+        select customer_id,amount from payment where amount between 8 and 9;
+        select customer_id,amount from payment where amount not between 8 and 9;
+        select amount,payment_date from payment where payment_date between '2007-02-07' and '2007-02-15';
+        select customer_id,rental_id,return_date from rental where customer_id IN(1,2) order by return_date desc;
+
+        select customer_id,rental_id,return_date
+        from rental
+        where customer_id IN(7,13,10)
+        order by return_date desc
+
+        select first_name from customer
+        where first_name like('Jen%')
+
+        select first_name,last_name from customer
+        where first_name like('%y');
+
+        select first_name,last_name from customer
+        where first_name like('%er%');
+
+        select first_name,last_name from customer
+        where first_name like('_her%');
+
+        select first_name,last_name from customer
+        where first_name not like 'Jen%';
+
+        select first_name,last_name from customer
+        where first_name ilike 'BAR%'; /*case insenstitive*/
+
+        /*GENERAL CHALLENGE*/
+        select COUNT(amount) from payment where amount > 5;
+        select count(*) from actor where first_name like 'P%';
+        select distinct(district) from address;
+        select count(*) from film where rating='R' and replacement_cost between 5 and 15;
+        select count(*) from film where title like('%Truman%');
+        </pre>
+      </div>   
+      
+      
+    </main>
+    <!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <script>
+          class Mathematician{
+          constructor(name,age){
+            this.name = name;
+            this.age = age;
+          }
+          sum(a,b){
+            return a+b;
+          }
+        }
+        joe = new Mathematician('Joe',24);
+        console.log(joe.sum(4,5));
+  </script>
+
+</body>
 </html>
