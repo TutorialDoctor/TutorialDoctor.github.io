@@ -1,0 +1,229 @@
+body{
+    background-color: #DDE0ED;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    height: 100%
+}
+
+.primary-button{
+    background-color: #E8EDFF;
+    border: none;
+    color: #577BF9;
+    width: 128px;
+    font-weight: 600;
+    height: 40px;
+    border-radius: .5rem;
+    text-align: left;
+    padding-left: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+.secondary-button{
+    background-color: white;
+    border: 1px solid #E1E1F1;
+    color: #757295;
+    margin-left: 1rem;
+    font-weight: 600;
+    width: 128px;
+    height: 40px;
+    border-radius: .5rem;
+    text-align: left;
+    padding-left: 1rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+nav{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: white;
+    height: 64px;
+    padding: 1rem 2rem;
+    border-radius: 0 .5rem 0 0;
+    border-bottom: 1.8px solid #EFEEF4
+}
+nav a{
+    text-decoration: none;
+    color:#1B1B47;font-weight:800;
+    margin-left: 1rem
+}
+
+nav svg{
+    margin-left: 1rem
+}
+
+.title{
+    color:#1B1B47;font-weight:800
+}
+.subtitle{
+    color:#817F9F;font-weight: 500
+}
+h1{
+    font-weight: 500;
+    color: #20204B
+}
+
+
+
+
+.team-bubble{
+    text-align: center
+}
+.team-bubble > img{
+    margin-bottom: 0;
+    padding: 1%;
+}
+
+#personell-area{
+    display:block;
+    background-color:white;
+    padding:3rem;
+    height:auto
+}
+@media screen and (min-width: 720px){
+    #personell-area{
+        display:flex;
+        flex: flex-wrap;
+        justify-content:space-evenly;
+    }
+}
+
+
+.container{
+    background-color: #F6F6FA;
+    display: flex;
+    width: calc(100% - 20%);
+    height: auto;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: .5rem;
+    position: relative;
+}
+
+.main{
+    /* padding: 3rem; */
+    width: 100%;
+    position: relative
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 6rem;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 1;
+    border: 2px solid #577BF9;
+}
+
+
+#export-button{
+    background-color: #577BF9;
+    border: none;
+    color:white;
+    width: 128px;
+    height: 40px;
+    border-radius: .5rem;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 1rem;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+#toggle-section{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    align-items:center;
+}
+
+
+
+.search{
+ background-color: #ECEDF6;
+  padding: 0 .75rem;
+  border-radius: .5rem;
+  align-items:center;
+  width: 40%;
+  color:#8887A5;
+}
+.search > svg{
+    margin-top: 1rem;
+    height: 100%
+}
+
+
+input{
+    height: 40px;
+    /* position: absolute; */
+    right:0;
+    width: 80%;
+    top: 0;
+    font-size: 1rem;
+    color:#8887A5;
+    background-color: #ECEDF6;
+    border:none;
+    outline: none
+}
+
+
+
+#team-section{
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background-color: white;
+    /* padding: 1rem; */
+     border-radius: .5rem
+}
+
+#lead-info{
+    display:block;
+    align-items:center;
+    border-bottom: 2px solid #ECEDF6;
+    text-align:center;
+    padding: 2rem ;
+     border-radius: .5rem .5rem 0 0;
+color:#8887A5;
+    background-color: #FCFCFF;
+    /* box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04); */
+}
+
+@media screen and (min-width: 720px){
+#lead-info{
+        display:flex;
+        flex: flex-wrap;
+        justify-content:space-between;
+    }
+}
+
+
+hr{
+    height: 2px;
+    width: calc(100% - 10%);
+    position:absolute;
+    margin-top: 3rem;
+    background-color: #E1E1F1;
+    border: none;
+    outline: none;
+}
+
+.personell{
+    border: 2px solid white;
+    background-color: #E8EAE9;
+    padding: .3%
+}
+
+#sidebar{
+    height: auto;
+    width: 8rem;
+    background-color: white;
+    border-radius: .5rem 0 0 .5rem;
+    overflow-y: scroll;
+    position: relative;
+    display:flex;
+    z-index: 1;
+    border-right: 1.8px solid #EFEEF4
+}
+
+

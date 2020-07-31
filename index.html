@@ -15,72 +15,182 @@
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css"> -->
+     <link rel="stylesheet" href="stylesheets/style.css">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
   </head>
 
   <body>
-    <img src="images/logo.svg">
-    
-    <!--
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">     
-      <ul class="navbar-nav">
-        <li><a href="#">
-        <img class="navbar-logo" src="https://pbs.twimg.com/profile_images/594288430328188928/YfiQVmPv_bigger.png" alt="Logo"></a></li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Nisi</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Suscipit</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Officia</a>
-      </li>    
-    </ul>
-    </nav>-->
-    
-    <div class="jumbotron">
-      <div align="center" class="container">
-        <header>
-          <h1>Tutorial Doctor</h1>
-          <i>Molestiae quibusdam dolorum expedita</i><br><br>
-          <section id="downloads" class="clearfix">
-          <a href="https://github.com/TutorialDoctor/TutorialDoctor.github.io" target="_blank" id="view-on-github" class="btn btn-primary"><span>View on GitHub</span></a>
-        </section>
-        </header>
-    </div></div>
-    
+    <div id="modal">Hi</div>
+
         <div class="container">
 
-        <div class="row" id="main_content">
-          <div id="1">
-            <p>Welcome to <b>The Clinic</b>. This is a website for people suffering from badtutoriaitus, cheaptutoriaitus, <a class="hotitem" href="#">expensivitus</a>, simplaphobia, babeloria, and many other tutorial ailments, that result in very little or no understanding.
-            I have searched over the internet to find, what I think to be, the best, yet not too cheap, yet not too expensive, yet not too complicated, yet not so foreign, tutorials for various topics. 
-            Submit a topic and I will try and find a good tutorial on the internet for it. Content will be screened.</p></div>
-          
-          <div id="2">
-            <p>If you like any of the videos that come from YouTube please <a class="hotitem" href="#">subscribe</a> to them. These are not my videos, and they will appreciate it. Tap the ''white "i" on the video to see the information. Thank you.</p>
-              </div>
-          
-          <div id="3"><p>lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua placeat rerum laboriosam optio saepe necessitatibus ipsa vitae ipsum voluptatem facere veritatis molestiae quibusdam dolorum <a class="hotitem" href="#">expedita</a> at aspernatur consequatur ipsam odio voluptas dignissimos veniam eos porro vero deserunt suscipit natus exercitationem animi esse culpa distinctio numquam nesciunt omnis provident ratione iste nisi similique sapiente asperiores architecto ducimus quia adipisci praesentium corporis harum facilis quis officiis velit nulla rem a temporibus nobis quod vel fugiat officia minima consectetur ea incidunt dicta voluptatibus deleniti ullam accusan</p></div>
-        </div>
-          </div>
-    
-    <div class="jumbotron">
-              <div align="center" class="container">
-              <div align="center" class="container">
-        <header>
-          <h1>More Information</h1>
-          <i>Molestiae quibusdam dolorum expedita</i><br><br>
-          <section id="downloads" class="clearfix">
-          <a href="mailto:thetutorialdoctor@gmail.com" target="_blank" id="view-on-github" class="btn btn-danger"><span>Email Me</span></a>
-        </section>
-        </header>
+            <div id="sidebar">
+
+                <div id="logo-area">
+                <img id="logo" src="images/logo.png">
+                <p>my<b>work</b></p></div>
+
+                <ul>
+                    <li>
+                        <a href="#">Dashboard</a>
+                    </li>
+                    <li>
+                        <a href="pages/tracking.html">Real-Time Tracking</a>
+                    </li>
+                    <li>
+                        <a href="pages/screenshots.html">Screenshots</a>
+                    </li>
+                    <li>
+                        <a href="#">Employees</a>
+                    </li>
+                    <li>
+                        <a href="#">Projects Tracking</a>
+                    </li>
+                     <li>
+                        <a href="pages/teams.html">Teams</a>
+                    </li>
+                     <li>
+                        <a href="#">Time and Attendance</a>
+                    </li>
+                    <li>
+                        <a href="#">Apps and Websites</a>
+                    </li>
+                    <li>
+                        <a href="pages/pricing.html">Pricing</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div id="main">
+                <nav>
+                    <span>Projects > Engineering</span>
+                    <span id="calendar">
+                    <!-- <svg id="icon-bell" width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bell" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2z"/>
+  <path fill-rule="evenodd" d="M8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z"/>
+</svg> -->
+
+                    <img id="profile-image" src="https://thetutorialdoctor.weebly.com/uploads/5/2/4/8/5248400/roundme_1_orig.png">
+                </nav>
+
+                <!-- KanBan -->
+
+                <div class="stats-container">
+                    <div>
+                        Total Time Programming
+                        <div class="stat-data">11:00</div>
+                    </div>
+
+                    <div>
+                        Earnings
+                        <div class="stat-data">2,409.20</div>
+                    </div>
+
+                    <div>
+                        Costs
+                        <div class="stat-data">40/hr</div>
+                    </div>
+
+                     <div>
+                        Productivity
+                        <div id="productivity-number" class="stat-data">93.57</div>
+                    </div>
+
                 </div>
-      </div>
-    </div>
+
+                <div class="tasks-container">
+                
+                    <div class="tab">Tasks <button id="task-button">Add New Task</button></div>
+
+                    <div class="kanban">
+                        <!-- <div>Tasks <button>Add New Task</button> </div> -->
+
+                        <!-- KanBanCards -->
+                        <div class="kanban-cards">
+                            <h3>Todo</h3>
+                            <div class="card-container">
+                    
+                            
+                         <div class="card"><p>UI Styleguide</p></div>
+                                   <div class="card"><p>Change old app icon</p></div>
+                      
+                            </div>
+                        </div>
+
+                        <div class="kanban-cards">
+                         <h3>On Hold</h3>
+                            <div class="card-container">
+                               
+                              
+                               
+                                   <div class="card"><p>New Look of Calendar<p></div>
+                                   <div class="card"><p>Interactions design</p></div>
+                            </div>
+                        </div>
+
+                         <div class="kanban-cards">
+                          <h3>In Progress</h3>
+                            <div class="card-container">
+                               
+                              
+                                <div class="card">
+                                    <p>Dashboard</p>
+                                </div>
+
+                                    <div class="card"><p>Design homepage</p></div>
+                             
+
+                                   <div class="card"><p>Usability Testing</p></div>
+
+                                   <div class="card"><p>Animated loader</p></div>
+                                    <div class="card"><a target="_blank" href="https://elated-liskov-a0fbb5.netlify.app/resume">Malcom  Resume</a></div>
+
+                            
+
+                            </div>
+                        </div>
+
+                         <div class="kanban-cards">
+                         <h3>Done</h3>
+                            <div id="done-cards" class="card-container">
+                                <div class="card"><a target="_blank" href="https://d2imt3pl77kocq.cloudfront.net/">Dream Center</a></div>
+                                <div class="card"><a target="_blank" href="https://9oaktreeservice.com/">9Oak Tree Service</a></div>
+                                <div class="card"><a target="_blank" href="https://henrycountydiscgolf.com/">Henry County Disc Golf</a></div>
+                                <div class="card"><a target="_blank" href="https://liveoakcs.com/">Liveoak CS</a></div>
+                                <div class="card"><a target="_blank" href="https://pierreandre.netlify.app/resume">Pierre Resume</a></div>
+                                <div class="card"><a target="_blank" href="https://simplyuniquephotography3.weebly.com/">Photography Website</a></div>
+                                <div class="card"><a target="_blank" href="https://github.com/TutorialDoctor/The-Bible-App">Python Bible App</a></div>
+                                <div class="card"><a target="_blank" href="https://github.com/TutorialDoctor/Editorial-Workflows">Editorial Workflows</a></div>
+                                <div class="card"><a target="_blank" href="https://github.com/TutorialDoctor/TD-Godot-3-Demos/tree/master/Godot%203%20Demos">Godot Game Demos</a></div>
+
+                            
+
+                                
+                         
+
+                            </div>
+                        </div>
+
+                        
+                    
+                        <!-- /KanBanCards -->
+
+                    </div>
+                <!-- /KanBan -->
+
+                </div><!--Takss container-->
+
+                    <canvas id="myChart"></canvas>
+                    <canvas id="barChart"></canvas>
+
+
+
+            </div>
+        </div>
+
 
     
     <footer align="center">
