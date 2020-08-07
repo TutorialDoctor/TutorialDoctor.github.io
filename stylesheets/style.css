@@ -40,6 +40,7 @@ nav{
 #sidebar{
     height: 100%;
     width: 16rem;
+    display:none;
     overflow-y: scroll;
 -webkit-box-shadow: 3px 0px 5px 0px rgba(226,232,240,1);
 -moz-box-shadow: 3px 0px 5px 0px rgba(226,232,240,1);
@@ -78,8 +79,25 @@ ul{
 @media screen and (min-width: 720px){
     .kanban{
         display:flex;
-        flex:flex-wrap
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 100%;
     }
+    #sidebar{
+        display: block
+    }
+
+    /* .kanban-cards{
+        width: 25% !important
+    } */
+}
+
+.kanban-cards{
+    width: 220px;
+    padding: .25rem;
+    overflow-y: hidden;    
 }
 
 a{
@@ -95,12 +113,7 @@ a:hover{
     padding: 1rem;
 }
 
-.kanban-cards{
-    width: 100%;
-    padding: .25rem;
-    overflow-y: hidden;
-    background-color:
-}
+
 
 .tasks-container{
     border: 2px solid #e2e8f0;
@@ -111,8 +124,7 @@ a:hover{
 .stats-container{
     margin-top: 1rem;
     display: block;
-    
-    justify-content: space-between
+    justify-content: space-between;
 }
 
 .stat-data{
@@ -124,16 +136,20 @@ a:hover{
     border: 2px solid #e2e8f0;
     border-radius: .25rem;
     padding: 1rem 1rem;
-    width: calc(100% -20%);
+    width: calc(100% -10%);
     margin-top: 1rem
 }
 @media screen and (min-width: 720px){
     .stats-container{
         display:flex;
-        flex:wrap
+        justify-content: space-evenly;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        width: 100%;
     }
     .stats-container > div{
-        width: 20%
+        width: 200px
     }
 }
 
@@ -164,6 +180,10 @@ h3{
     border-radius: .25rem;
     padding: .5rem;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.card p{
+    vertical-align: middle;
+    line-height: 120%
 }
 
 
