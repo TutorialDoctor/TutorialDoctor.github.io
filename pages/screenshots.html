@@ -8,58 +8,78 @@
     
 </head>
 <body>
-    <div id="board">
+    
+
+     <div class="row">
+        <div class="column">
+            <img src="../images/vod.png">
+          <img src="../images/clock.png">
+            <img src="../images/schedule.png">
+          <img src="../images/todo_ui.png">
+          <img src="../images/tic_tac_toe.png">
+            <img src="../images/stream.png">
+          <img src="../images/cleaning.png">
+        </div>
+        <div class="column">
+          <img src="../images/calculator.png">
+            <img src="../images/palm.png">
+          <img src="../images/ecommerce.JPG">
+             <img src="../images/oak.png">
+          <img src="../images/schedule.png">
+           <img src="../images/portfolio.png">
+           <img src="../images/stream.png">
+              <img src="../images/palm.png">
+        </div>
+        <div class="column">
+         <img src="../images/cleaning.png">
+          <img src="../images/portfolio.png">
+          <img src="../images/calculator.png">
+          <img src="../images/dream.png">
+           <img src="../images/cleaning.png">
+          <img src="../images/todo_ui.png">
+          <img src="../images/clock.png">
+        </div>
     </div>
 
     <style>
-        body{
-    background-color: #e2e8f0
-}
-
-#board{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: row;
+    .row {
+    display: flex;
     flex-wrap: wrap;
-    align-content: flex-start;
+    padding: 0 4px;
+    justify-content: center;
+  }
+
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 33.33%;
+    max-width: 33.33%;
+    /* padding: 0 4px; */
+  }
+  
+  .column img {
+    /* margin: 8px 0; */
+    vertical-align: middle;
     width: 100%;
-}
+  }
 
-.card{
-    width: 80%;
-    padding: 3rem;
-    font-family: 'Rowdies', cursive;
-    margin: 3rem 1rem;
-    height: 420px;
-    background-color:white;
-    font-size: 4rem;
-    text-align:center;
-    border-radius: .5rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    background-position:center;
-    background-repeat:no-repeat;
-    background-size:contain;
-}
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
     </style>
-    <script >
 
-var board = document.getElementById('board')
-cards = [
-    {image:"../images/calculator.png"},
-    {image:"../images/clock.png"},
-    {image:"../images/todo_ui.png"},
-    {image:"../images/tic_tac_toe.png"},
-    {image:"../images/cleaning.png"},
-    {image:"../images/portfolio.png"},
-    {image:"../images/schedule.png"}
-]
-
-
-for(i=0;i < cards.length; i++){
-    board.innerHTML += `<div class="card" style="background-image:url('${cards[i].image}')"></div>`
-}
-
-    </script>
     
 </body>
 </html>
