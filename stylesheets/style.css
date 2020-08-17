@@ -217,7 +217,7 @@ h3{
 .container{
     background-color: white;
     display: flex;
-    width: calc(100% - 20%);
+    width: calc(100% - 10%);
     height: 900px;
     margin-top: 3rem;
     margin-right: auto;
