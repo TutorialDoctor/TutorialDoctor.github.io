@@ -17,7 +17,7 @@ data.forEach(item => {
 
 function openAlert(e,TEXT){
     alert_box.innerHTML = `
-        <div class="bg-gray-900 rounded-lg w-full xl:w-1/2 p-8">
+        <div class="bg-gray-900 rounded-lg w-full xl:w-1/2 p-8" style="height:auto">
                   <div class="flex flex-col items-start p-4">
                     <div class="flex items-center w-full">
                       <div class="text-2xl text-white my-4">${e.dataset.name}</div>
@@ -26,7 +26,7 @@ function openAlert(e,TEXT){
                        </svg>
                     </div>
                     <hr>
-                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain w-full" style="height:512px" src="${e.dataset.image}"/>
+                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain h-full w-full" src="${e.dataset.image}"/>
                     <div class="mt-4 text-gray-200">${TEXT}</div>
                     <hr>
                     <div class="mt-5 ml-auto">
