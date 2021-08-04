@@ -98,5 +98,10 @@ const data = [
         name: "9Oak",
         image: "http://tutorialdoctor.github.io/images/oak.png",
         description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration"
+    },
+    {
+        name: "Portal",
+        image: "../images/portal.png",
+        description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration"
     }
 ]
