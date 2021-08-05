@@ -148,5 +148,13 @@ const data = [
         image: "https://tutorialdoctor.github.io/images/discgolf.png",
         description: "First VUEJs client website with BULMS CSS",
         url:"https://henrycountydiscgolf.com/"
+    },
+    {
+        name: "BigSouthern",
+        image: "https://tutorialdoctor.github.io/images/bss.png",
+        description: "VueJS client website with VueJS and bootstrap",
+        url:"https://bigsouthernsoftware.com/#/"
     }
 ]
+
+
