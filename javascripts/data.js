@@ -56,13 +56,13 @@ const data = [
     {
         name: "LMS1",
         image: "http://tutorialdoctor.github.io/images/lms1.png",
-        description: "Learning management system build with VueJS and styled with Tailwind",
+        description: "Learning management system build with VueJS and styled with Tailwind deployed with Netlify",
         url:"https://jovial-einstein-161567.netlify.app/"
     },
     {
         name: "LMS2",
         image: "http://tutorialdoctor.github.io/images/lms2.png",
-        description: "Learning management system build with VueJS and styled with Tailwind",
+        description: "Learning management system build with VueJS and styled with Tailwind deployed with Netlify",
         url:"https://jovial-einstein-161567.netlify.app/"
     },
     {
@@ -104,13 +104,13 @@ const data = [
     {
         name: "Docs1",
         image: "http://tutorialdoctor.github.io/images/docsclone1.png",
-        description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS",
+        description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Vercel",
         url: "https://google-docs-clone-lake-six.vercel.app/"
     },
     {
         name: "Docs2",
         image: "http://tutorialdoctor.github.io/images/docsclone2.png",
-        description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS",
+        description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Vercel",
         url: "https://google-docs-clone-lake-six.vercel.app/"
     },
     {
@@ -130,6 +130,12 @@ const data = [
         image: "https://tutorialdoctor.github.io/images/loa.png",
         description: "Client website with Wordpress",
         url:"https://liveoakcs.com/"
+    },
+    {
+        name: "Concord - Slack Clone",
+        image: "https://tutorialdoctor.github.io/images/slack.png",
+        description: "Functional Slack clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Firebase Hosting",
+        url:"https://concord-38c21.web.app/"
     }
 ]
 
