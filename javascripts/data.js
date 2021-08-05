@@ -122,7 +122,7 @@ const data = [
     {
         name: "Portal",
         image: "https://tutorialdoctor.github.io/images/portal.png",
-        description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration",
+        description: "Prototype with HTML, CSS and JS",
         url:""
     },
     {
