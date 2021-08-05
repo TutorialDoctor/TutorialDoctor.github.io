@@ -64,7 +64,7 @@ function openDesignAlert(e,TEXT){
                        </svg>
                     </div>
                     <hr>
-                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain h-full w-full" src="${e.dataset.src}"/>
+                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain max-w-md h-full w-full" src="${e.dataset.src}"/>
                     <div class="mt-4 text-gray-200">Design by the Tutorial Doctor</div>
                     <hr>
                     <div class="mt-5 ml-auto">

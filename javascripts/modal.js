@@ -27,7 +27,7 @@ function openAlert(e,TEXT){
                        </svg>
                     </div>
                     <hr>
-                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain h-full w-full" src="${e.dataset.image}"/>
+                    <img class="mx-auto mx-8 rounded-md shadow:md object-contain max-w-lg h-full w-full" src="${e.dataset.image}"/>
                     <div class="mt-4 text-gray-200">${TEXT}</div>
                     <hr>
                     <div class="mt-5 ml-auto">
