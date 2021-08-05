@@ -46,9 +46,9 @@ const designs = document.getElementById('designs');
 
 
 files.forEach(function(f){
-    var src = 'http://tutorialdoctor.github.io/images/designs/' + f;
+    var src = '../images/designs/' + f;
     slides.push(src);
-    designs.innerHTML += `<img class="hover:border-purple-700 border-4 mx-auto rounded-lg w-64 shadow-lg rounded-lg h-64 object-cover"" data-src="${src}" 
+    designs.innerHTML += `<img class="hover:border-purple-700 border-4 mx-auto rounded-lg w-64 shadow-lg rounded-lg h-64 object-cover"" data-src=${src} src="${src}" 
     alt=""
 >`
 });
