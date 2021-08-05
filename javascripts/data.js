@@ -39,7 +39,7 @@ const data = [
         name: "DreamCenter",
         image: "http://tutorialdoctor.github.io/images/dream.png",
         description: "Client website built with VueJS and styled with Bootstrap",
-        url:""
+        url:"https://d2imt3pl77kocq.cloudfront.net/"
     },
     {
         name: "Mandalorian",
@@ -57,13 +57,13 @@ const data = [
         name: "LMS1",
         image: "http://tutorialdoctor.github.io/images/lms1.png",
         description: "Learning management system build with VueJS and styled with Tailwind",
-        url:""
+        url:"https://jovial-einstein-161567.netlify.app/"
     },
     {
         name: "LMS2",
         image: "http://tutorialdoctor.github.io/images/lms2.png",
         description: "Learning management system build with VueJS and styled with Tailwind",
-        url:""
+        url:"https://jovial-einstein-161567.netlify.app/"
     },
     {
         name: "GameUI",
@@ -75,19 +75,19 @@ const data = [
         name: "Pukka1",
         image: "http://tutorialdoctor.github.io/images/pukka1.png",
         description: "Ruby on Rails app with Tailwind CSS and other technologies",
-        url:""
+        url:"https://safe-caverns-62528.herokuapp.com/"
     },
     {
         name: "Pukka2",
         image: "http://tutorialdoctor.github.io/images/pukka2.png",
         description: "Ruby on Rails app with Tailwind CSS and other technologies",
-        url:""
+        url:"https://safe-caverns-62528.herokuapp.com/"
     },
     {
         name: "Pukka3",
         image: "http://tutorialdoctor.github.io/images/schedule.png",
         description: "Ruby on Rails app with Tailwind CSS and other technologies",
-        url:""
+        url:"https://safe-caverns-62528.herokuapp.com/"
     },
     {
         name: "Photography",
@@ -117,12 +117,19 @@ const data = [
         name: "9Oak",
         image: "http://tutorialdoctor.github.io/images/oak.png",
         description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration",
-        url:""
+        url:"https://9oaktreeservice.com/"
     },
     {
         name: "Portal",
         image: "https://tutorialdoctor.github.io/images/portal.png",
         description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration",
         url:""
+    },
+    {
+        name: "LiveOak CS",
+        image: "https://tutorialdoctor.github.io/images/loa.png",
+        description: "Client website with Wordpress",
+        url:"https://liveoakcs.com/"
     }
 ]
+

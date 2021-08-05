@@ -8,6 +8,7 @@ data.forEach(item => {
     projects.innerHTML += `<img
     data-name=${item.name} 
     data-image="${item.image}" 
+    data-url="${item.url}" 
     onclick="openAlert(this,
         '${item.description}')" 
     class="hover:border-purple-700 border-4 mx-auto rounded-lg w-64 shadow-lg rounded-lg h-64 object-cover" src="${item.image}" 
@@ -30,9 +31,10 @@ function openAlert(e,TEXT){
                     <div class="mt-4 text-gray-200">${TEXT}</div>
                     <hr>
                     <div class="mt-5 ml-auto">
-                      <button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-                        Nice
+                      <a href="${e.dataset.url}" target="_blank"><button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                        View
                       </button>
+                      </a>
                       <button onclick="closeAlert()" class="bg-transparent hover:bg-gray-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
                         Close
                       </button>
