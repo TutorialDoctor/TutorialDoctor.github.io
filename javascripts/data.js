@@ -136,6 +136,20 @@ const data = [
         image: "https://tutorialdoctor.github.io/images/slack.png",
         description: "Functional Slack clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Firebase Hosting",
         url:"https://concord-38c21.web.app/"
+    },
+    {
+        name: "LiveOak LMLS",
+        image: "https://tutorialdoctor.github.io/images/loalms.png",
+        description: "Massive Ruby on Rails application",
+        url:"https://portal.liveoakcs.com/users/sign_in"
+    },
+    {
+        name: "HenryCountyDiscGolf",
+        image: "https://tutorialdoctor.github.io/images/discgolf.png",
+        description: "First VUEJs client website with BULMS CSS",
+        url:"https://henrycountydiscgolf.com/"
     }
 ]
 
+
+https://henrycountydiscgolf.com/
