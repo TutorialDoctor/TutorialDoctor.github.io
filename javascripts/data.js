@@ -150,6 +150,3 @@ const data = [
         url:"https://henrycountydiscgolf.com/"
     }
 ]
-
-
-https://henrycountydiscgolf.com/
