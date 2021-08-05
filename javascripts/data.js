@@ -126,19 +126,19 @@ const data = [
         url:""
     },
     {
-        name: "LiveOak CS",
+        name: "LiveOakCSMarketinSite",
         image: "https://tutorialdoctor.github.io/images/loa.png",
         description: "Client website with Wordpress",
         url:"https://liveoakcs.com/"
     },
     {
-        name: "Concord - Slack Clone",
+        name: "Concord-Slack Clone",
         image: "https://tutorialdoctor.github.io/images/slack.png",
         description: "Functional Slack clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Firebase Hosting",
         url:"https://concord-38c21.web.app/"
     },
     {
-        name: "LiveOak LMLS",
+        name: "LiveOakLMLS",
         image: "https://tutorialdoctor.github.io/images/loalms.png",
         description: "Massive Ruby on Rails application",
         url:"https://portal.liveoakcs.com/users/sign_in"
