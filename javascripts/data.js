@@ -15,19 +15,19 @@ const data = [
         name: "Nextflix1",
         image: "http://tutorialdoctor.github.io/images/net1.png",
         description: "Netflix clone buildt with VueJS with ruby,python and node servers and styled with Tailwind CSS",
-        url:""
+        url:"https://nextflix-ml54fl5ju-thetutorialdoctor.vercel.app/movie-index"
     },
     {
         name: "Nextflix2",
         image: "http://tutorialdoctor.github.io/images/net2.png",
         description: "Netflix clone buildt with VueJS with ruby,python and node servers and styled with Tailwind CSS",
-        url:""
+        url:"https://nextflix-ml54fl5ju-thetutorialdoctor.vercel.app/movie-index"
     },
     {
         name: "Nextflix3",
         image: "http://tutorialdoctor.github.io/images/net3.png",
         description: "Netflix clone buildt with VueJS with ruby,python and node servers and styled with Tailwind CSS",
-        url:""
+        url:"https://nextflix-ml54fl5ju-thetutorialdoctor.vercel.app/movie-index"
     },
     {
         name: "RealEstate",
