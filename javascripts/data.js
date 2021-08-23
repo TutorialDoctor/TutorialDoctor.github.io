@@ -154,6 +154,12 @@ const data = [
         image: "https://tutorialdoctor.github.io/images/bss.png",
         description: "VueJS client website with VueJS and bootstrap",
         url:"https://bigsouthernsoftware.com/#/"
+    },
+    {
+        name: "Godot HUB",
+        image: "https://tutorialdoctor.github.io/images/gdhub.png",
+        description: "Client website with using Github pages and TailwindCSS with Github Actions",
+        url:"https://tutorialdoctor.github.io/godot-hub.github.io/"
     }
 ]
 
