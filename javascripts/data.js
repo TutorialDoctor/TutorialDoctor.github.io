@@ -157,7 +157,7 @@ const data = [
     },
     {
         name: "Godot HUB",
-        image: "https://tutorialdoctor.github.io/images/gdhub.png",
+        image: "https://tutorialdoctor.github.io/images/godot3dhub.png",
         description: "Client website with using Github pages and TailwindCSS with Github Actions",
         url:"https://tutorialdoctor.github.io/godot-hub.github.io/"
     }
