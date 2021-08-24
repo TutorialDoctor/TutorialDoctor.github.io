@@ -6,12 +6,6 @@ const data = [
         url:""
     },
     {
-        name: "Youtube Downloader",
-        image: "http://tutorialdoctor.github.io/images/downloader.png",
-        description: "Youtube downloader built with python flask and styled with Tailwind CSS in 2021",
-        url:""
-    },
-    {
         name: "Nextflix1",
         image: "http://tutorialdoctor.github.io/images/net1.png",
         description: "Netflix clone buildt with VueJS with ruby,python and node servers and styled with Tailwind CSS",
@@ -45,6 +39,12 @@ const data = [
         name: "Mandalorian",
         image: "http://tutorialdoctor.github.io/images/manda.png",
         description: "Prototype with Tailwind",
+        url:""
+    },
+    {
+        name: "Youtube Downloader",
+        image: "http://tutorialdoctor.github.io/images/downloader.png",
+        description: "Youtube downloader built with python flask and styled with Tailwind CSS in 2021",
         url:""
     },
     {
