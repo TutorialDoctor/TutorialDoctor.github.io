@@ -98,17 +98,17 @@ const data = [
     {
         name: "Medemy",
         image: "http://tutorialdoctor.github.io/images/medemy.png",
-        description: "Udemy clone ptototype with Tailwind CS",
+        description: "Udemy clone prototype with Tailwind CS",
         url:""
     },
     {
-        name: "Docs1",
+        name: "GoogleDocs1",
         image: "http://tutorialdoctor.github.io/images/docsclone1.png",
         description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Vercel",
         url: "https://google-docs-clone-lake-six.vercel.app/"
     },
     {
-        name: "Docs2",
+        name: "GoogleDocs2",
         image: "http://tutorialdoctor.github.io/images/docsclone2.png",
         description: "Functional Google Docs clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Vercel",
         url: "https://google-docs-clone-lake-six.vercel.app/"
@@ -116,7 +116,7 @@ const data = [
     {
         name: "9Oak",
         image: "http://tutorialdoctor.github.io/images/oak.png",
-        description: "Client website with VueJS styled with Bootstrap and including a ZOHO integration",
+        description: "Client website made with VueJS, styled with Bootstrap and including a ZOHO integration",
         url:"https://9oaktreeservice.com/"
     },
     {
@@ -126,7 +126,7 @@ const data = [
         url:""
     },
     {
-        name: "LiveOakCSMarketinSite",
+        name: "LiveOakCSMarketingSite",
         image: "https://tutorialdoctor.github.io/images/loa.png",
         description: "Client website with Wordpress",
         url:"https://liveoakcs.com/"
@@ -140,7 +140,7 @@ const data = [
     {
         name: "LiveOakLMLS",
         image: "https://tutorialdoctor.github.io/images/loalms.png",
-        description: "Massive Ruby on Rails application",
+        description: "Large LMS system built with ruby on rails and styled with tailwind",
         url:"https://portal.liveoakcs.com/users/sign_in"
     },
     {
@@ -152,7 +152,7 @@ const data = [
     {
         name: "BigSouthern",
         image: "https://tutorialdoctor.github.io/images/bss.png",
-        description: "VueJS client website with VueJS and bootstrap",
+        description: "VueJS client styled with bootstrap.",
         url:"https://bigsouthernsoftware.com/#/"
     },
     {
