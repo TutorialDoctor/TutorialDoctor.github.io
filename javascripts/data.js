@@ -134,7 +134,7 @@ const data = [
     {
         name: "RealEstatePortal",
         image: "https://tutorialdoctor.github.io/images/real_rails.png",
-        description: "Ruby on Rails app with Devsise and Postgres and Tailwind CSS",
+        description: "Ruby on Rails app with Devise Authentication and Postgres database and Tailwind CSS",
         url:""
     },
     {
