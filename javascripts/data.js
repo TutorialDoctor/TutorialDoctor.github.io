@@ -132,6 +132,12 @@ const data = [
         url:"https://liveoakcs.com/"
     },
     {
+        name: "RealEstatePortal",
+        image: "https://tutorialdoctor.github.io/images/real_rails.png",
+        description: "Ruby on Rails app with Devsise and Postgres and Tailwind CSS",
+        url:""
+    },
+    {
         name: "Concord-Slack Clone",
         image: "https://tutorialdoctor.github.io/images/slack.png",
         description: "Functional Slack clone with ReactJS, Firebase and Google Auth styled with Tailwind CSS deployed with Firebase Hosting",
