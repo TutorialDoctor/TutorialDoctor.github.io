@@ -13,6 +13,7 @@ data.forEach(item => {
         '${item.description}')" 
     class="hover:border-purple-700 border-4 mx-auto rounded-lg w-full shadow-lg rounded-lg h-64 object-cover object-top md:object-center" src="${item.image}" 
     alt=""
+    style="height:600px"
 >`
 });
 
