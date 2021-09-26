@@ -33,7 +33,7 @@ function openAlert(e,TEXT){
                     <hr>
                     <div class="mt-5 ml-auto">
                       <a href="${e.dataset.url}"><button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
-                        View
+                        ${((e.dataset.url != "") ? 'View' : 'Link Unavailable')}
                       </button>
                       </a>
                       <button onclick="closeAlert()" class="bg-transparent hover:bg-gray-500 text-purple-700 font-semibold hover:text-white py-2 px-4 border border-purple-500 hover:border-transparent rounded">
