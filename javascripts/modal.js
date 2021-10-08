@@ -32,7 +32,7 @@ function openAlert(e,TEXT){
                     <div class="mt-4 text-gray-200">${TEXT}</div>
                     <hr>
                     <div class="mt-5 ml-auto">
-                      <a href="${e.dataset.url}"><button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
+                      <a href="${e.dataset.url}" target="_blank"><button class="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded">
                         ${((e.dataset.url != "") ? 'View' : 'Link Unavailable')}
                       </button>
                       </a>

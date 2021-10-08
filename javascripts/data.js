@@ -84,10 +84,10 @@ const data = [
         url:"https://safe-caverns-62528.herokuapp.com/"
     },
     {
-        name: "Pukka3",
+        name: "MedApp",
         image: "http://tutorialdoctor.github.io/images/schedule.png",
         description: "Ruby on Rails app with Tailwind CSS and other technologies",
-        url:"https://safe-caverns-62528.herokuapp.com/"
+        url:""
     },
     {
         name: "Photography",
