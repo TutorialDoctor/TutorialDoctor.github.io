@@ -152,7 +152,7 @@ const data = [
     {
         name: "FlaskCommerce",
         image: "https://tutorialdoctor.github.io/images/flask_commerce.png",
-        description: "Flask App with Postgres DB deployed to Heroku created for educational purposes to teach DB design.",
+        description: "Flask App with Postgres DB deployed to Heroku with User Auth, created for educational purposes to teach DB design.",
         url:"https://td-flask-store.herokuapp.com/login"
     },
     {
