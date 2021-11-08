@@ -180,6 +180,3 @@ const data = [
         url:""
     }
 ]
-
-
-https://td-flask-store.herokuapp.com/login
