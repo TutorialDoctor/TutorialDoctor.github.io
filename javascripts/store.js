@@ -52,3 +52,9 @@ products.forEach(item => {
             </div>
     `
 });
+
+
+
+document.getElementById("python_button").onclick = function () {
+window.location("https://link.waveapps.com/jm96dv-kx7dej");
+};
