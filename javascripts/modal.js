@@ -11,9 +11,9 @@ data.forEach(item => {
     data-url="${item.url}" 
     onclick="openAlert(this,
         '${item.description}')" 
-    class="hover:border-purple-700 border-4 mx-auto rounded-lg w-full shadow-lg rounded-lg h-64 object-cover object-top md:object-center" src="${item.image}" 
+    class="my-8 hover:border-yellow-500 border-4 border-transparent mx-auto rounded-lg w-full shadow-lg rounded-lg object-cover object-top object-center" src="${item.image}" 
     alt=""
-    style="height:600px"
+    style="height:900px"
 >`
 });
 
