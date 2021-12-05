@@ -178,5 +178,11 @@ const data = [
         image: "https://tutorialdoctor.github.io/images/gamedev.png",
         description: "A platformer Game using GDscript",
         url:""
+    },
+    {
+        name: "Snippets",
+        image: "https://tutorialdoctor.github.io/images/snippets.png",
+        description: "An idea i've been having to make life easier for me",
+        url:"https://venv-psi.vercel.app/"
     }
 ]
