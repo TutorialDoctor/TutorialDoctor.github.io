@@ -182,7 +182,7 @@ const data = [
     {
         name: "Snippets",
         image: "https://tutorialdoctor.github.io/images/snippets.png",
-        description: "An idea i've been having to make life easier for me",
+        description: "An idea to make life easier for me",
         url:"https://venv-psi.vercel.app/"
     }
 ]
