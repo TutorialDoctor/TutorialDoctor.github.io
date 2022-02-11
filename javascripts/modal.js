@@ -6,7 +6,7 @@ const projects = document.getElementById('projects');
 // console.log(data)
 data.forEach(item => {
     projects.innerHTML += `
-      <div class="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+      <div class="transition ease-in-out hover:-translate-y-1 hover:scale-110 duration-300 w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
         <div>
           <img data-name=${item.name} 
           data-image="${item.image}" 
