@@ -5,16 +5,23 @@ const projects = document.getElementById('projects');
 
 // console.log(data)
 data.forEach(item => {
-    projects.innerHTML += `<img
-    data-name=${item.name} 
-    data-image="${item.image}" 
-    data-url="${item.url}" 
-    onclick="openAlert(this,
-        '${item.description}')" 
-    class="my-8 hover:border-yellow-500 border-4 border-transparent mx-auto rounded-lg w-full shadow-lg rounded-lg object-cover object-top object-center" src="${item.image}" 
-    alt=""
-    style="height:900px"
->`
+    projects.innerHTML += `
+      <div class="w-full bg-gray-900 rounded-lg sahdow-lg overflow-hidden flex flex-col justify-center items-center">
+        <div>
+          <img data-name=${item.name} 
+          data-image="${item.image}" 
+          data-url="${item.url}" 
+          src="${item.image}"
+          onclick="openAlert(this,'${item.description}')" 
+          class="object-center object-cover h-auto w-full"  alt="photo">
+        </div>
+        <div class="text-center py-8 sm:py-6">
+          <p class="text-xl text-white font-bold mb-2">${item.name}</p>
+          <p class="text-base text-gray-400 font-normal">${item.description}</p>
+        </div>
+      </div>
+
+`
 });
 
 function openAlert(e,TEXT){
