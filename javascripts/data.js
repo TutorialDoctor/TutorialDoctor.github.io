@@ -104,7 +104,7 @@ const data = [
     {
         name: "Medemy",
         image: "http://tutorialdoctor.github.io/images/medemy.png",
-        description: "Udemy clone prototype with Tailwind CS",
+        description: "Udemy clone prototype with Tailwind CSS",
         url:""
     },
     {
