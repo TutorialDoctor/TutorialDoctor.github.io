@@ -42,6 +42,12 @@ const data = [
         url:""
     },
     {
+        name: "Music",
+        image: "http://tutorialdoctor.github.io/images/music.png",
+        description: "Flask App with SQlite DB with User Auth, created for educational purposes to learn Algorithms and Data Structures design.",
+        url:""
+    },
+    {
         name: "Youtube Downloader",
         image: "http://tutorialdoctor.github.io/images/downloader.png",
         description: "Youtube downloader built with python flask and styled with Tailwind CSS in 2021",
