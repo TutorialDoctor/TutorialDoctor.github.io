@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tailwind Starter Template - Nordic Shop: Tailwind Toolbox</title>
+    <meta name="description" content="Free open source Tailwind CSS Store template">
+    <meta name="keywords" content="tailwind,tailwindcss,tailwind css,css,starter template,free template,store template, shop layout, minimal, monochrome, minimalistic, theme, nordic">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!--Replace with your tailwind.css once created-->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,400&display=swap" rel="stylesheet">
+
+    <style>
+        .work-sans {
+            font-family: 'Work Sans', sans-serif;
+        }
+                
+        #menu-toggle:checked + #menu {
+            display: block;
+        }
+        
+        .hover\:grow {
+            transition: all 0.3s;
+            transform: scale(1);
+        }
+        
+        .hover\:grow:hover {
+            transform: scale(1.02);
+        }
+        
+        .carousel-open:checked + .carousel-item {
+            position: static;
+            opacity: 100;
+        }
+        
+        .carousel-item {
+            -webkit-transition: opacity 0.6s ease-out;
+            transition: opacity 0.6s ease-out;
+        }
+        
+        #carousel-1:checked ~ .control-1,
+        #carousel-2:checked ~ .control-2,
+        #carousel-3:checked ~ .control-3 {
+            display: block;
+        }
+        
+        .carousel-indicators {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 2%;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+        
+        #carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+        #carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+        #carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+            color: #000;
+            /*Set to match the Tailwind colour you want the active one to be */
+        }
+    </style>
+
+</head>
+
+<body class="bg-slate-900 text-white work-sans leading-normal text-base tracking-normal">
+
+
+
+    <nav class="px-6 py-4 bg-slate-800 shadow">
+        <div class="container flex flex-col mx-auto md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center justify-between">
+                <div>
+                    <a href="../index.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-indigo-200 hover:text-white h-8 w-8" viewBox="0 0 20 20" fill="currentColor">
+                        <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z" />
+                      </svg>
+                    </a>
+
+                </div>
+                <div>
+                    <button type="button" class="block text-gray-800 hover:text-gray-600 focus:text-gray-600 focus:outline-none md:hidden">
+                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current">
+                            <path d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z">
+                            </path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="flex-col hidden md:flex md:flex-row md:-mx-4">
+                <a href="../index.html" class="my-1 text-white hover:text-yellow-900 md:mx-4 md:my-0">Home</a>
+                <a href="./designs.html" class="my-1 text-white hover:text-yellow-900 md:mx-4 md:my-0">Designs</a>
+                <a href="mailto:thetutorialdoctor@gmail.com" class="my-1 text-white hover:text-yellow-900 md:mx-4 md:my-0">Contact us</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section class="bg-slate-800 py-8">
+
+        <div class="container mx-auto flex items-center flex-wrap pt-4 pb-12">
+
+
+         <div class="container">
+            <div class="flex flex-wrap -mx-4">
+               <div class="w-full px-4">
+                  <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                     <span class="font-semibold text-lg text-indigo-200 mb-2 block">
+                     Menotring Pricing
+                     </span>
+                     <h2
+                        class="
+                        font-bold
+                        text-3xl
+                        sm:text-4xl
+                        md:text-[40px]
+                        text-white
+                        mb-4
+                        "
+                        >
+                        Need a mentor?
+                     </h2>
+                     <p class="text-base text-gray-100">
+                        Basic and Styled templates have a maximum of 5 models. All templates are styled using Tailwind CSS.
+                        You can choose between Python Flask and Ruby on Rails. VueJS & React JS options will be coming soon.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            
+            <div class="container">
+               <div class="flex flex-wrap -mx-4">
+                  <div class="py-12 rounded-md w-full bg-white z-30">
+                         <div class="text-center py-4 px-7">
+                             <h1 class="text-gray-700 text-4xl font-black">$40.00</h1>
+                             <p class="text-gray-500  mt-2">/ 15 minutes</p>
+                             
+                         </div>
+                         <div class="h-px bg-gray-200"></div>
+                         <div class="text-center mt-3">
+                             <p class="text-sm text-gray-400">
+                                 Learn how to design, plan and develop a 2D platformer from scratch using the Godot game engine.
+                             </p>
+                         </div>
+                         <a href="mailto:thetutorialdoctor@gmail.com" class="w-64 flex mx-auto justify-center mt-6 mb-3 py-2 text-white font-semibold bg-gray-700 hover:shadow-xl duration-200 hover:bg-gray-800">Contact Us</a>
+                     </div>
+               </div>
+            </div>
+
+         <div class="mt-8 container">
+            <div class="flex flex-wrap -mx-4">
+               <div class="w-full px-4">
+                  <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+                     <span class="font-semibold text-lg text-indigo-200 mb-2 block">
+                     Tutoring Pricing
+                     </span>
+                     <h2
+                        class="
+                        font-bold
+                        text-3xl
+                        sm:text-4xl
+                        md:text-[40px]
+                        text-white
+                        mb-4
+                        "
+                        >
+                        Learn to Code
+                     </h2>
+                     <p class="text-base text-gray-100">
+                        Basic and Styled templates have a maximum of 5 models. All templates are styled using Tailwind CSS.
+                        You can choose between Python Flask and Ruby on Rails. VueJS & React JS options will be coming soon.
+                     </p>
+                  </div>
+               </div>
+            </div>
+            </div>
+
+            <!-- PRODUCTS -->
+            <section class='mx-auto'>
+
+                <div class="w-full  flex flex-wrap items-center  justify-center  ">
+            
+                    <div class="flex flex-col sm:flex-col lg:flex-row xl:flex-row md:flex-row justify-center items center  container   ">
+                    <div class="py-12 rounded-md sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30">
+                        <h1 class="text-gray-500 font-semibold text-xl ">Python</h1>
+                            <div class="text-center py-4 px-7">
+                                <h1 class="text-gray-700 text-4xl font-black">$495.00</h1>
+                                <p class="text-gray-500  mt-2">3-Hours</p>
+                                
+                            </div>
+                            <div class="h-px bg-gray-200"></div>
+                            <div class="text-center mt-3">
+                                <p class="text-sm text-gray-400">
+                                    Learn all you need to know to build a web app with Python and Flask from UI development to Database Design with SQLite3
+                                </p>
+                            </div>
+                            <a href="https://link.waveapps.com/jm96dv-kx7dej" class="w-full flex justify-center mt-6 mb-3 py-2 text-white font-semibold bg-gray-700 hover:shadow-xl duration-200 hover:bg-gray-800">Buy Now</a>
+                        </div>
+                        
+                        <div class="py-12 rounded-md sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-purple-500 transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40  shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl">
+                            <h1 class="text-purple-200 font-semibold text-xl ">Rails</h1>
+                            <div class="text-center py-4 px-7">
+                                <h1 class="text-white text-4xl font-black">$495.00</h1>
+                                <p class="text-white text-opacity-50 mt-2">3-Hours</p>
+                                
+                            </div>
+                            <div class="h-px bg-purple-400"></div>
+                            <div class="text-center mt-3">
+                                <p class="text-sm text-white text-opacity-80">
+                                    I've found Ruby on Rails to be the best framework for rapidly building digital products. Learn all you need to know in 3 hours.
+                                </p>
+                            </div>
+                            <a href="https://link.waveapps.com/eqhba4-ymcq75" class="w-full flex justify-center w-full mt-6 mb-3 py-2 text-white font-semibold bg-purple-400 hover:shadow-xl duration-200 hover:bg-purple-800">Buy Now</a>
+                        </div>
+                        
+                        <div class="py-12 rounded-md sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-white z-30">
+                        <h1 class="text-gray-500 font-semibold text-xl ">Game Development</h1>
+                            <div class="text-center py-4 px-7">
+                                <h1 class="text-gray-700 text-4xl font-black">$495.00</h1>
+                                <p class="text-gray-500  mt-2">3-Hours</p>
+                                
+                            </div>
+                            <div class="h-px bg-gray-200"></div>
+                            <div class="text-center mt-3">
+                                <p class="text-sm text-gray-400">
+                                    Learn how to design, plan and develop a 2D platformer from scratch using the Godot game engine.
+                                </p>
+                            </div>
+                            <a href="https://link.waveapps.com/9reyp4-w7p928" class="w-full flex justify-center mt-6 mb-3 py-2 text-white font-semibold bg-gray-700 hover:shadow-xl duration-200 hover:bg-gray-800">Buy Now</a>
+                        </div>
+
+                        <div class="py-12 rounded-md sm:py-12 md:py-6 lg:py-6 xl:py-6 px-8 w-full md:max-w-min sm:w-full bg-purple-500 transform scale-1 sm:scale-1 md:scale-105 lg:scale-105 xl:scale-105 z-40  shadow-none sm:shadow-none md:shadow-xl lg:shadow-xl xl:shadow-xl">
+                            <h1 class="text-purple-200 font-semibold text-xl ">UI Development</h1>
+                            <div class="text-center py-4 px-7">
+                                <h1 class="text-white text-4xl font-black">$495.00</h1>
+                                <p class="text-white text-opacity-50 mt-2">3-Hours</p>
+                                
+                            </div>
+                            <div class="h-px bg-purple-400"></div>
+                            <div class="text-center mt-3">
+                                <p class="text-sm text-white text-opacity-80">
+                                    I've found Tailwind CSS to be the best framework for rapidly building User Interfaces. Learn all you need to know in 3 hours.
+                                </p>
+                            </div>
+                            <a href="https://link.waveapps.com/jb4m8v-9ar65a" class="w-full flex justify-center w-full mt-6 mb-3 py-2 text-white font-semibold bg-purple-400 hover:shadow-xl duration-200 hover:bg-purple-800">Buy Now</a>
+                        </div>
+                    </div>
+                     
+                </div>
+                 </section>
+                 <!-- PRODUC -->
+
+               <!-- DETAILS -->
+               <link rel="stylesheet" href="https://cdn.tailgrids.com/tailgrids-fallback.css" />
+
+<!-- ====== Pricing Section Start -->
+<section
+   class="
+   pt-20
+   lg:pt-[120px]
+   pb-12
+   lg:pb-[90px]
+   relative
+   z-20
+   overflow-hidden
+   "
+   >
+   
+   <div class="container">
+      <div class="flex flex-wrap -mx-4">
+         <div class="w-full px-4">
+            <div class="text-center mx-auto mb-[60px] lg:mb-20 max-w-[510px]">
+               <span class="font-semibold text-lg text-indigo-200 mb-2 block">
+               Template Pricing
+               </span>
+               <h2
+                  class="
+                  font-bold
+                  text-3xl
+                  sm:text-4xl
+                  md:text-[40px]
+                  text-white
+                  mb-4
+                  "
+                  >
+                  We will build your app
+               </h2>
+               <p class="text-base text-gray-100">
+                  Basic and Styled templates have a maximum of 5 models. All templates are styled using Tailwind CSS.
+                  You can choose between Python Flask and Ruby on Rails. VueJS & React JS options will be coming soon.
+               </p>
+            </div>
+         </div>
+      </div>
+      <!-- TEMPLATE PRICES -->
+      <div class="flex flex-wrap justify-center -mx-4">
+         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div
+               class="
+               bg-white
+               rounded-xl
+               relative
+               z-10
+               overflow-hidden
+               border border-primary border-opacity-20
+               shadow-pricing
+               py-10
+               px-8
+               sm:p-12
+               lg:py-10 lg:px-6
+               xl:p-12
+               mb-10
+               "
+               >
+               <span class="text-purple-500 font-semibold text-lg block mb-4">
+               Basic
+               </span>
+               <h2 class="font-bold text-dark mb-5 text-[42px]">
+                  $1,400
+                  <span class="text-base text-body-color font-medium">
+                  <!--/ year--->
+                  </span>
+               </h2>
+               <p
+                  class="
+                  text-base text-body-color
+                  pb-8
+                  mb-8
+                  border-b border-[#F2F2F2]
+                  "
+                  >
+                  Perfect for using as the basis for a personal website or a client project.
+               </p>
+               <div class="mb-7">
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     No Authentication
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     No Styles
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                    Limited access
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     No updates
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Use on 1 (one) project
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     1 Month support
+                  </p>
+               </div>
+               <a
+                  href="https://link.waveapps.com/vwwygc-jy6ex3"
+                  class="
+                  w-full
+                  block
+                  text-base
+                  font-semibold
+                  text-purple-500
+                  bg-transparent
+                  border border-[#D4DEFF]
+                  rounded-md
+                  text-center
+                  p-4
+                  hover:text-white hover:bg-yellow-500 hover:border-yellow-500
+                  transition
+                  "
+                  >
+               Choose Basic
+               </a>
+               <div>
+                  <span class="absolute right-0 top-7 z-[-1]">
+                     <svg
+                        width="77"
+                        height="172"
+                        viewBox="0 0 77 172"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                        <defs>
+                           <linearGradient
+                              id="paint0_linear"
+                              x1="86"
+                              y1="0"
+                              x2="86"
+                              y2="172"
+                              gradientUnits="userSpaceOnUse"
+                              >
+                              <stop stop-color="#3056D3" stop-opacity="0.09" />
+                              <stop
+                                 offset="1"
+                                 stop-color="#C4C4C4"
+                                 stop-opacity="0"
+                                 />
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                  </span>
+                  <span class="absolute right-4 top-4 z-[-1]">
+                     <svg
+                        width="41"
+                        height="89"
+                        viewBox="0 0 41 89"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle
+                           cx="38.9138"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="1.42021"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 1.42021)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 1.4202)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="1.42019"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 1.42019)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 1.4202)"
+                           fill="#3056D3"
+                           />
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div
+               class="
+               bg-white
+               rounded-xl
+               relative
+               z-10
+               overflow-hidden
+               border border-primary border-opacity-20
+               shadow-pricing
+               py-10
+               px-8
+               sm:p-12
+               lg:py-10 lg:px-6
+               xl:p-12
+               mb-10
+               "
+               >
+               <span class="text-purple-500 font-semibold text-lg block mb-4">
+               Styled
+               </span>
+               <h2 class="font-bold text-dark mb-5 text-[42px]">
+                  $2,800
+                  <span class="text-base text-body-color font-medium">
+                  <!--/ year-->
+                  </span>
+               </h2>
+               <p
+                  class="
+                  text-base text-body-color
+                  pb-8
+                  mb-8
+                  border-b border-[#F2F2F2]
+                  "
+                  >
+                  Perfect for using as the basis for an MVP
+               </p>
+               <div class="mb-7">
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     User Authentication
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     All styles included
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Limited access
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     No updates
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Use on 1 (one) project
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     1 Month support
+                  </p>
+               </div>
+               <a
+                  href="https://link.waveapps.com/8rnwxm-hmhkw3"
+                  class="
+                  w-full
+                  block
+                  text-base
+                  font-semibold
+                  hover:text-white
+                  hover:bg-yellow-500
+                  border border-yellow-500
+                  text-purple-500
+                  rounded-md
+                  text-center
+                  p-4
+                  hover:bg-opacity-90
+                  transition
+                  "
+                  >
+               Choose Styled
+               </a>
+               <div>
+                  <span class="absolute right-0 top-7 z-[-1]">
+                     <svg
+                        width="77"
+                        height="172"
+                        viewBox="0 0 77 172"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                        <defs>
+                           <linearGradient
+                              id="paint0_linear"
+                              x1="86"
+                              y1="0"
+                              x2="86"
+                              y2="172"
+                              gradientUnits="userSpaceOnUse"
+                              >
+                              <stop stop-color="#3056D3" stop-opacity="0.09" />
+                              <stop
+                                 offset="1"
+                                 stop-color="#C4C4C4"
+                                 stop-opacity="0"
+                                 />
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                  </span>
+                  <span class="absolute right-4 top-4 z-[-1]">
+                     <svg
+                        width="41"
+                        height="89"
+                        viewBox="0 0 41 89"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle
+                           cx="38.9138"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="1.42021"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 1.42021)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 1.4202)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="1.42019"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 1.42019)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 1.4202)"
+                           fill="#3056D3"
+                           />
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+         <div class="w-full md:w-1/2 lg:w-1/3 px-4">
+            <div
+               class="
+               bg-white
+               rounded-xl
+               relative
+               z-10
+               overflow-hidden
+               border border-yellow-500 border-opacity-20
+               shadow-pricing
+               py-10
+               px-8
+               sm:p-12
+               lg:py-10 lg:px-6
+               xl:p-12
+               mb-10
+               "
+               >
+               <span class="text-purple-500 font-semibold text-lg block mb-4">
+               Complete
+               </span>
+               <h2 class="font-bold text-dark mb-5 text-[42px]">
+                  $46,000
+                  <span class="text-base text-body-color font-medium">
+                  / 3 months
+                  </span>
+               </h2>
+               <p
+                  class="
+                  text-base text-body-color
+                  pb-8
+                  mb-8
+                  border-b border-[#F2F2F2]
+                  "
+                  >
+                  Perfect for using as a startup application. $80/hr after 3 months. <span class="text-yellow-500 font-semibold">Contact us before purchasing</span>
+               </p>
+               <div class="mb-7">
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     User Authentication
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     All styles included
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Lifetime access
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Paid updates
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     Use on Unlimited projects
+                  </p>
+                  <p class="text-base text-body-color leading-loose mb-1">
+                     3 Months support
+                  </p>
+               </div>
+               <a
+                  href="https://link.waveapps.com/abp4cb-guwsu2"
+                  class="
+                  w-full
+                  block
+                  text-base
+                  font-semibold
+                  text-purple-500
+                  bg-transparent
+                  border border-[#D4DEFF]
+                  rounded-md
+                  text-center
+                  p-4
+                  hover:text-white hover:bg-yellow-500 hover:border-yellow-500
+                  transition
+                  "
+                  >
+               Choose Complete
+               </a>
+               <div>
+                  <span class="absolute right-0 top-7 z-[-1]">
+                     <svg
+                        width="77"
+                        height="172"
+                        viewBox="0 0 77 172"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle cx="86" cy="86" r="86" fill="url(#paint0_linear)" />
+                        <defs>
+                           <linearGradient
+                              id="paint0_linear"
+                              x1="86"
+                              y1="0"
+                              x2="86"
+                              y2="172"
+                              gradientUnits="userSpaceOnUse"
+                              >
+                              <stop stop-color="#3056D3" stop-opacity="0.09" />
+                              <stop
+                                 offset="1"
+                                 stop-color="#C4C4C4"
+                                 stop-opacity="0"
+                                 />
+                           </linearGradient>
+                        </defs>
+                     </svg>
+                  </span>
+                  <span class="absolute right-4 top-4 z-[-1]">
+                     <svg
+                        width="41"
+                        height="89"
+                        viewBox="0 0 41 89"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        >
+                        <circle
+                           cx="38.9138"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="38.9138"
+                           cy="1.42021"
+                           r="1.42021"
+                           transform="rotate(180 38.9138 1.42021)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="26.4157"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 26.4157 1.4202)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="13.9177"
+                           cy="1.42019"
+                           r="1.42021"
+                           transform="rotate(180 13.9177 1.42019)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="87.4849"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 87.4849)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="74.9871"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 74.9871)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="62.4892"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 62.4892)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="38.3457"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 38.3457)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="13.634"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 13.634)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="50.2754"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 50.2754)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="26.1319"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 26.1319)"
+                           fill="#3056D3"
+                           />
+                        <circle
+                           cx="1.41963"
+                           cy="1.4202"
+                           r="1.42021"
+                           transform="rotate(180 1.41963 1.4202)"
+                           fill="#3056D3"
+                           />
+                     </svg>
+                  </span>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</section>
+<!-- ====== Pricing Section End -->
+                <!-- /DETAILS -->
+                <!-- BUY ME A PIZZA AND HELP SUPPORT OPEN-SOURCE RESOURCES -->
+                <div class="flex items-end justify-end fixed bottom-0 right-0 mb-4 mr-4 z-10">
+                    <div>
+                        <a title="Buy me a pizza" href="https://www.buymeacoffee.com/Dekartmc" target="_blank"
+                            class="block w-16 h-16 rounded-full transition-all shadow hover:shadow-lg transform hover:scale-110 hover:rotate-12">
+                            <img class="object-cover object-center w-full h-full rounded-full" src="https://img.icons8.com/emoji/48/000000/pizza-emoji.png"/>
+                    </a>
+                    </div>
+                </div>
+
+                 
+            
+        </div>
+
+            </div>
+
+   
+    
+
+
+
+     <!-- FOOTER -->
+     <footer class="bg-white dark:bg-gray-800 pt-4 pb-8 xl:pt-8">
+        <div class="max-w-screen-lg xl:max-w-screen-xl mx-auto px-4 sm:px-6 md:px-8 text-gray-400 dark:text-gray-300">
+            <ul class="text-lg font-light pb-8 flex flex-wrap justify-center">
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            Repositories
+                        </h2>
+                        <ul>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://github.com/TutorialDoctor/Pythonista-Projects">
+                                    Pythonista
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="https://github.com/TutorialDoctor/Editorial-Workflows">
+                                    Editorial
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a href="https://github.com/TutorialDoctor/TD-Godot-Games">
+                                    Godot 2
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://github.com/TutorialDoctor/TD-Godot-3-Demos">
+                                    Godot 3
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            Social
+                        </h2>
+                        <ul>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://github.com/TutorialDoctor">
+                                    Github
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="#">
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://twitter.com/TutorialDoctor">
+                                    Twitter
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://www.linkedin.com/in/raphael-smith-6b5171b0/">
+                                    LinkedIn
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="w-1/2 md:w-1/3 lg:w-1/3">
+                    <div class="text-center">
+                        <h2 class="text-gray-500 dark:text-gray-200 text-md uppercase mb-4">
+                            Works
+                        </h2>
+                        <ul>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="#">
+                                    Coming Soon
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://forum.nomadsculpt.com/t/tutorial-doctor-renders/3020">
+                                    3D Modeling
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://github.com/TutorialDoctor/TD-Godot-Games">
+                                    Godot
+                                </a>
+                            </li>
+                            <li class="mb-4 hover:text-gray-800 dark:hover:text-white transition-colors duration-200">
+                                <a target="_blank" href="https://www.facebook.com/CoderDojoMcDonough/photos/a.1486807464870547.1073741827.1443484792536148/1767035136847777/?type=3">
+                                    CoderDojo
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="pt-8 flex border-t border-gray-200 max-w-xs mx-auto items-center justify-between">
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1343 12v264h-157q-86 0-116 36t-30 108v189h293l-39 296h-254v759h-306v-759h-255v-296h255v-218q0-186 104-288.5t277-102.5q147 0 228 12z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1684 408q-67 98-162 167 1 14 1 42 0 130-38 259.5t-115.5 248.5-184.5 210.5-258 146-323 54.5q-271 0-496-145 35 4 78 4 225 0 401-138-105-2-188-64.5t-114-159.5q33 5 61 5 43 0 85-11-112-23-185.5-111.5t-73.5-205.5v-4q68 38 146 41-66-44-105-115t-39-154q0-88 44-163 121 149 294.5 238.5t371.5 99.5q-8-38-8-74 0-134 94.5-228.5t228.5-94.5q140 0 236 102 109-21 205-78-37 115-142 178 93-10 186-50z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792">
+                        <path d="M896 128q209 0 385.5 103t279.5 279.5 103 385.5q0 251-146.5 451.5t-378.5 277.5q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105 20.5-150.5q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27t-83.5-38.5-85-13.5q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5-55.5-62.5q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5t-146.5-451.5q0-209 103-385.5t279.5-279.5 385.5-103zm-477 1103q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M477 625v991h-330v-991h330zm21-306q1 73-50.5 122t-135.5 49h-2q-82 0-132-49t-50-122q0-74 51.5-122.5t134.5-48.5 133 48.5 51 122.5zm1166 729v568h-329v-530q0-105-40.5-164.5t-126.5-59.5q-63 0-105.5 34.5t-63.5 85.5q-11 30-11 81v553h-329q2-399 2-647t-1-296l-1-48h329v144h-2q20-32 41-56t56.5-52 87-43.5 114.5-15.5q171 0 275 113.5t104 332.5z">
+                        </path>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg width="20" height="20" fill="currentColor" class="text-xl hover:text-gray-800 dark:hover:text-white transition-colors duration-200" viewBox="0 0 1792 1792" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1551 1476q15-6 26-3t11 17.5-15 33.5q-13 16-44 43.5t-95.5 68-141 74-188 58-229.5 24.5q-119 0-238-31t-209-76.5-172.5-104-132.5-105-84-87.5q-8-9-10-16.5t1-12 8-7 11.5-2 11.5 4.5q192 117 300 166 389 176 799 90 190-40 391-135zm207-115q11 16 2.5 69.5t-28.5 102.5q-34 83-85 124-17 14-26 9t0-24q21-45 44.5-121.5t6.5-98.5q-5-7-15.5-11.5t-27-6-29.5-2.5-35 0-31.5 2-31 3-22.5 2q-6 1-13 1.5t-11 1-8.5 1-7 .5h-10l-3-.5-2-1.5-1.5-3q-6-16 47-40t103-30q46-7 108-1t76 24zm-394-443q0 31 13.5 64t32 58 37.5 46 33 32l13 11-227 224q-40-37-79-75.5t-58-58.5l-19-20q-11-11-25-33-38 59-97.5 102.5t-127.5 63.5-140 23-137.5-21-117.5-65.5-83-113-31-162.5q0-84 28-154t72-116.5 106.5-83 122.5-57 130-34.5 119.5-18.5 99.5-6.5v-127q0-65-21-97-34-53-121-53-6 0-16.5 1t-40.5 12-56 29.5-56 59.5-48 96l-294-27q0-60 22-119t67-113 108-95 151.5-65.5 190.5-24.5q100 0 181 25t129.5 61.5 81 83 45 86 12.5 73.5v589zm-672 21q0 86 70 133 66 44 139 22 84-25 114-123 14-45 14-101v-162q-59 2-111 12t-106.5 33.5-87 71-32.5 114.5z">
+                        </path>
+                    </svg>
+                </a>
+            </div>
+            <div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+                <form class="flex w-full max-w-sm space-x-3">
+                    <div class=" relative ">
+                        <input type="text" id="&quot;form-subscribe-Subscribe" class=" rounded-lg border-transparent flex-1 appearance-none border border-gray-300 w-full py-2 px-4 bg-white text-gray-700 placeholder-gray-400 shadow-sm text-base focus:outline-none focus:ring-2 focus:ring-purple-600 focus:border-transparent" placeholder="Email"/>
+                        </div>
+                        <button class="flex-shrink-0 px-4 py-2 text-base font-semibold text-white bg-purple-600 rounded-lg shadow-md hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-purple-200" type="submit">
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+                <div class="text-center pt-10 sm:pt-12 font-light flex items-center justify-center">
+                    The Tutorial Doctor
+                </div>
+            </div>
+        </footer>
+    <!--  FOOTER -->
+
+    <script src="../javascripts/store.js" ></script>
+
+</body>
+
+</html>

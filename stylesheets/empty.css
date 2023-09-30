@@ -1,0 +1,17 @@
+body{
+     background-color: #edf2f7;
+    font-family: 'Roboto', sans-serif;
+    position: relative
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    width: calc(100% - 20%);
+    height: 600px;
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border-radius: .25rem
+}

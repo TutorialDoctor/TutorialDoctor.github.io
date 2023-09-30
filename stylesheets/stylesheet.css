@@ -1,0 +1,25 @@
+#1{
+  color:red !important;
+}
+
+#2{
+  color:blue !important;
+  //text-align: left !important;
+}
+
+.hotitem{
+  //border: 1px solid #b90000;
+  border-radius: 16px;
+  background-color: #de4449;
+  padding: 7px;
+  color:white !important;
+  margin: 3px;
+}
+
+.jumbotron{
+  border-radius: 0;
+}
+
+body > div div{
+  padding:0px 18px 0px 18px;
+}
